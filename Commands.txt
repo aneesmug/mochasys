@@ -3,3 +3,5 @@ php spark make:controller <name>
 php spark make:filter <name>
 php spark make:model <name>
 
+
+composer update vendor/package:version
