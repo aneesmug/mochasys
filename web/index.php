@@ -1,0 +1,27 @@
+<?php
+    include("./includes/header.php");
+    $page=$_GET['page'];
+    if(!$page){
+        include("./includes/home_contant.php");
+        }
+    elseif($page=="gallery"){
+        include("./includes/gallery.php");
+        }
+    elseif($page=="menu_items"){
+        include("./includes/menu_items.php");
+        }
+    elseif($page=="our_team"){
+        include("./includes/team.php");
+        }
+    elseif($page=="contact_us"){
+        include("./includes/contactus.php");
+        }
+    elseif($page=="find_us"){
+        include("./includes/locations.php");
+        }
+/*************************/
+    else{
+            include("./includes/404.php");
+        }
+    include("includes/footer.php");
+?>
